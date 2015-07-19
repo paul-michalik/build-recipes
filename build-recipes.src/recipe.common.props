@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets">
+    <Import Project="recipe.root.paths.props" />
+    <Import Project="recipe.root.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros">
+    <DevkitCommonTmpDir>$(DevkitCommonRootTargetDir)\tmp\$(DevkitCommonTargetFullName)\$(ProjectName)</DevkitCommonTmpDir>
+    <DevkitCommonIncDir>$(DevkitCommonRootDir)</DevkitCommonIncDir>
+    <DevkitCommonSrcDir>$(DevkitCommonRootDir)</DevkitCommonSrcDir>
+    <DevkitCommonLibDir>$(DevkitCommonRootTargetDir)\lib\$(DevkitCommonTargetFullName)</DevkitCommonLibDir>
+    <DevkitCommonBinDir>$(DevkitCommonRootTargetDir)\bin\$(DevkitCommonTargetFullName)</DevkitCommonBinDir>
+    <DevkitCommonLibABIDir>$(DevkitCommonRootTargetDir)\lib\$(DevkitCommonTargetShortName)</DevkitCommonLibABIDir>
+    <DevkitCommonBinABIDir>$(DevkitCommonRootTargetDir)\bin\$(DevkitCommonTargetShortName)</DevkitCommonBinABIDir>
+    <DevkitCommonTargetDir>$(DevkitCommonRootTargetDir)</DevkitCommonTargetDir>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ExecutablePath>$(ExecutablePath);$(DevkitCommonLibDir);$(DevkitCommonBinDir);$(DevkitCommonLibABIDir);$(DevkitCommonBinABIDir)</ExecutablePath>
+    <IncludePath>$(DevkitCommonIncDir);$(IncludePath)</IncludePath>
+    <ReferencePath>$(ReferencePath);$(DevkitCommonLibDir);$(DevkitCommonLibABIDir)</ReferencePath>
+    <LibraryPath>$(LibraryPath);$(DevkitCommonLibDir);$(DevkitCommonLibABIDir)</LibraryPath>
+    <SourcePath>$(DevkitCommonRootDir);$(SourcePath)</SourcePath>
+    <IntDir>$(DevkitCommonTmpDir)\</IntDir>
+    <OutDir>$(DevkitCommonBinDir)</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <DisableSpecificWarnings>4510;4512;4610;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ProgramDataBaseFileName>$(OutDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <BuildMacro Include="DevkitCommonTmpDir">
+      <Value>$(DevkitCommonTmpDir)</Value>
+    </BuildMacro>
+    <BuildMacro Include="DevkitCommonIncDir">
+      <Value>$(DevkitCommonIncDir)</Value>
+    </BuildMacro>
+    <BuildMacro Include="DevkitCommonSrcDir">
+      <Value>$(DevkitCommonSrcDir)</Value>
+    </BuildMacro>
+    <BuildMacro Include="DevkitCommonLibDir">
+      <Value>$(DevkitCommonLibDir)</Value>
+    </BuildMacro>
+    <BuildMacro Include="DevkitCommonBinDir">
+      <Value>$(DevkitCommonBinDir)</Value>
+    </BuildMacro>
+    <BuildMacro Include="DevkitCommonLibABIDir">
+      <Value>$(DevkitCommonLibABIDir)</Value>
+    </BuildMacro>
+    <BuildMacro Include="DevkitCommonBinABIDir">
+      <Value>$(DevkitCommonBinABIDir)</Value>
+    </BuildMacro>
+    <BuildMacro Include="DevkitCommonTargetDir">
+      <Value>$(DevkitCommonTargetDir)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>
