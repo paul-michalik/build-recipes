@@ -18,6 +18,13 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="..\recipe.application.props" />
+    <None Include="..\recipe.common.props" />
+    <None Include="..\recipe.library.props" />
+    <None Include="..\recipe.root.paths.props" />
+    <None Include="..\recipe.root.props" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{1B739C10-EBF7-4ACF-B551-9124C0EE71FD}</ProjectGuid>
     <RootNamespace>buildrecipesprj</RootNamespace>
@@ -54,19 +61,19 @@
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\build-recipes.src\recipe.application.props" />
+    <Import Project="..\recipe.application.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\build-recipes.src\recipe.application.props" />
+    <Import Project="..\recipe.application.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\build-recipes.src\recipe.application.props" />
+    <Import Project="..\recipe.application.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\build-recipes.src\recipe.application.props" />
+    <Import Project="..\recipe.application.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup />
@@ -110,13 +117,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <None Include="..\build-recipes.src\recipe.application.props" />
-    <None Include="..\build-recipes.src\recipe.common.props" />
-    <None Include="..\build-recipes.src\recipe.library.props" />
-    <None Include="..\build-recipes.src\recipe.root.paths.props" />
-    <None Include="..\build-recipes.src\recipe.root.props" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
