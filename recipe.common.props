@@ -8,10 +8,10 @@
     <DevkitCommonTmpDir>$(DevkitCommonRootTargetDir)\tmp\$(DevkitCommonTargetFullName)\$(ProjectName)</DevkitCommonTmpDir>
     <DevkitCommonIncDir>$(DevkitCommonRootDir)</DevkitCommonIncDir>
     <DevkitCommonSrcDir>$(DevkitCommonRootDir)</DevkitCommonSrcDir>
-    <DevkitCommonLibDir>$(DevkitCommonRootTargetDir)\lib\$(DevkitCommonTargetFullName)</DevkitCommonLibDir>
-    <DevkitCommonBinDir>$(DevkitCommonRootTargetDir)\bin\$(DevkitCommonTargetFullName)</DevkitCommonBinDir>
-    <DevkitCommonLibABIDir>$(DevkitCommonRootTargetDir)\lib\$(DevkitCommonTargetShortName)</DevkitCommonLibABIDir>
-    <DevkitCommonBinABIDir>$(DevkitCommonRootTargetDir)\bin\$(DevkitCommonTargetShortName)</DevkitCommonBinABIDir>
+    <DevkitCommonLibDir>$(DevkitCommonRootTargetDir)\lib\$(DevkitCommonTargetFullPath)</DevkitCommonLibDir>
+    <DevkitCommonBinDir>$(DevkitCommonRootTargetDir)\bin\$(DevkitCommonTargetFullPath)</DevkitCommonBinDir>
+    <DevkitCommonLibABIDir>$(DevkitCommonRootTargetDir)\lib\$(DevkitCommonTargetShortPath)</DevkitCommonLibABIDir>
+    <DevkitCommonBinABIDir>$(DevkitCommonRootTargetDir)\bin\$(DevkitCommonTargetShortPath)</DevkitCommonBinABIDir>
     <DevkitCommonTargetDir>$(DevkitCommonRootTargetDir)</DevkitCommonTargetDir>
   </PropertyGroup>
   <PropertyGroup>
