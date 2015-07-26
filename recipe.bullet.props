@@ -5,7 +5,7 @@
     <RecipeBulletVersion>2.83.5</RecipeBulletVersion>
     <RecipeBulletRootDir>\Source\Repos\devkit.externals\bullet\bullet3-$(RecipeBulletVersion)</RecipeBulletRootDir>
     <RecipeBulletSrcDir>$(RecipeBulletRootDir)\src</RecipeBulletSrcDir>
-    <RecipeBulletIncDir>$(RecipeBulletSrcDir)</RecipeBulletIncDir>
+    <RecipeBulletIncDir>$(RecipeBulletSrcDir)\src</RecipeBulletIncDir>
     <RecipeBulletLibDir>$(RecipeBulletRootDir)\targets\lib\$(DevkitCommonTargetFullPath)\</RecipeBulletLibDir>
     <RecipeBulletBinDir>$(RecipeBulletRootDir)\targets\bin\$(DevkitCommonTargetFullPath)</RecipeBulletBinDir>
   </PropertyGroup>
