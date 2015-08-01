@@ -3,7 +3,7 @@
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
     <RecipeBulletVersion>2.83.5</RecipeBulletVersion>
-    <RecipeBulletRootDir>\Software\bullet3\bullet3-$(RecipeBulletVersion)</RecipeBulletRootDir>
+    <RecipeBulletRootDir>$(DevkitCommonExtDir)\bullet3\bullet3-$(RecipeBulletVersion)</RecipeBulletRootDir>
     <RecipeBulletSrcDir>$(RecipeBulletRootDir)\src</RecipeBulletSrcDir>
     <RecipeBulletIncDir>$(RecipeBulletSrcDir)\src</RecipeBulletIncDir>
     <RecipeBulletLibDir>$(RecipeBulletRootDir)\targets\lib\$(DevkitCommonTargetFullPath)</RecipeBulletLibDir>
