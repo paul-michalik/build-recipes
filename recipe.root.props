@@ -4,6 +4,7 @@
     <DevkitCommonRootDir>$(SolutionDir)..</DevkitCommonRootDir>
     <DevkitCommonBuildTool>msbuild</DevkitCommonBuildTool>
     <DevkitCommonRootTargetDir>$(DevkitCommonRootDir)\targets</DevkitCommonRootTargetDir>
+    <DevkitCommonExtDir>%USERPROFILE%\Software</DevkitCommonExtDir>
   </PropertyGroup>
   <ItemDefinitionGroup />
   <ItemGroup>
@@ -12,6 +13,9 @@
     </BuildMacro>
     <BuildMacro Include="DevkitCommonRootTargetDir">
       <Value>$(DevkitCommonRootTargetDir)</Value>
+    </BuildMacro>
+    <BuildMacro Include="DevkitCommonExtDir">
+      <Value>$(DevkitCommonExtDir)</Value>
     </BuildMacro>
   </ItemGroup>
 </Project>
