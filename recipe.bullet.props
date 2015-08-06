@@ -3,7 +3,7 @@
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
     <RecipeBulletVersion>2.83.5</RecipeBulletVersion>
-    <RecipeBulletRootDir>\Software\bullet3\bullet3-$(RecipeBulletVersion)</RecipeBulletRootDir>
+    <RecipeBulletRootDir>$(DevkitCommonExtDir)\bullet3\bullet3-$(RecipeBulletVersion)</RecipeBulletRootDir>
     <RecipeBulletSrcDir>$(RecipeBulletRootDir)\src</RecipeBulletSrcDir>
     <RecipeBulletIncDir>$(RecipeBulletSrcDir)\src</RecipeBulletIncDir>
     <RecipeBulletLibDir>$(RecipeBulletRootDir)\targets\lib\$(DevkitCommonTargetFullPath)</RecipeBulletLibDir>
@@ -19,6 +19,9 @@
     <Link>
       <AdditionalDependencies>Bullet2FileLoader.lib;Bullet3Collision.lib;Bullet3Common.lib;Bullet3Dynamics.lib;Bullet3Geometry.lib;Bullet3OpenCL_clew.lib;BulletCollision.lib;BulletDynamics.lib;BulletFileLoader.lib;BulletSoftBody.lib;BulletWorldImporter.lib;BulletXmlWorldImporter.lib;ConvexDecomposition.lib;GIMPACTUtils.lib;HACD.lib;LinearMath.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <ClCompile>
+      <PreprocessorDefinitions>BT_USE_DOUBLE_PRECISION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
     <BuildMacro Include="RecipeBulletVersion">

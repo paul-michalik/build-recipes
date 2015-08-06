@@ -21,13 +21,14 @@
     <LibraryPath>$(LibraryPath);$(DevkitCommonLibDir);$(DevkitCommonLibABIDir)</LibraryPath>
     <SourcePath>$(DevkitCommonRootDir);$(SourcePath)</SourcePath>
     <IntDir>$(DevkitCommonTmpDir)\</IntDir>
-    <OutDir>$(DevkitCommonBinDir)</OutDir>
+    <OutDir>$(DevkitCommonBinDir)\</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup>
     <ClCompile>
       <WarningLevel>Level4</WarningLevel>
       <DisableSpecificWarnings>4510;4512;4610;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <ProgramDataBaseFileName>$(OutDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
