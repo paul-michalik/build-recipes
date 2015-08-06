@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <DevkitSimpackRoot>$(DevkitCommonRootDir)\spckxxxx</DevkitSimpackRoot>
+    <DevkitSimpackSrcRoot>$(DevkitSimpackRoot)\develop</DevkitSimpackSrcRoot>
+    <DevkitSimpackExtRoot>$(DevkitSimpackSrcRoot)\extern</DevkitSimpackExtRoot>
+  </PropertyGroup>
+  <PropertyGroup>
+    <IncludePath>$(DevkitSimpackSrcRoot);$(DevkitSimpackExtRoot)\share\boost-1.56\include;$(DevkitSimpackExtRoot)\share\qt-4.8\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <PreprocessorDefinitions>WINDOWS$(PlatformArchitecture);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <BuildMacro Include="DevkitSimpackRoot">
+      <Value>$(DevkitSimpackRoot)</Value>
+    </BuildMacro>
+    <BuildMacro Include="DevkitSimpackSrcRoot">
+      <Value>$(DevkitSimpackSrcRoot)</Value>
+    </BuildMacro>
+    <BuildMacro Include="DevkitSimpackExtRoot">
+      <Value>$(DevkitSimpackExtRoot)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>

@@ -21,7 +21,7 @@
     <LibraryPath>$(LibraryPath);$(DevkitCommonLibDir);$(DevkitCommonLibABIDir)</LibraryPath>
     <SourcePath>$(DevkitCommonRootDir);$(SourcePath)</SourcePath>
     <IntDir>$(DevkitCommonTmpDir)\</IntDir>
-    <OutDir>$(DevkitCommonBinDir)</OutDir>
+    <OutDir>$(DevkitCommonBinDir)\</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup>
     <ClCompile>
