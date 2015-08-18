@@ -8,14 +8,17 @@
     <DevkitSimpackExtBuildRoot>$(DevkitCommonRootDir)\spckxxxx.jom.win32</DevkitSimpackExtBuildRoot>
   </PropertyGroup>
   <PropertyGroup>
-    <IncludePath>$(DevkitSimpackSrcRoot);$(DevkitSimpackSrcRoot)\src\global\include;$(DevkitSimpackSrcRoot)\src\libs\sbr\ext_include;$(DevkitSimpackSrcRoot)\src\libs\filter\2d\include;$(DevkitSimpackSrcRoot)\src\postproc\include;$(DevkitSimpackSrcRoot)\src\postproc\include\scripting;$(DevkitSimpackSrcRoot)\src\postproc\include\resulttree;$(DevkitSimpackSrcRoot)\src\postproc\include\nodes;$(DevkitSimpackExtRoot)\share\boost-1.56\include;$(DevkitSimpackExtRoot)\share\qt-4.8\include;$(DevkitSimpackExtRoot)\share\qt-4.8\include\QtGui;$(DevkitSimpackExtRoot)\share\qt-4.8\include\QtCore;$(DevkitSimpackSrcRoot)\src\libs;$(DevkitSimpackExtBuildRoot)\dyn\src\include;$(DevkitSimpackExtRoot)\share\xerces-2.8\include;$(DevkitSimpackExtRoot)\share\oiv-9.5.2-eng\include;$(DevkitSimpackExtRoot)\share\qsa-1.2\include;$(IncludePath)</IncludePath>
+    <IncludePath>$(DevkitSimpackSrcRoot);$(DevkitSimpackSrcRoot)\src\global\include;$(DevkitSimpackSrcRoot)\src\libs\sbr\ext_include;$(DevkitSimpackSrcRoot)\src\libs\filter\2d\include;$(DevkitSimpackSrcRoot)\src\postproc;$(DevkitSimpackSrcRoot)\src\postproc\include;$(DevkitSimpackSrcRoot)\src\postproc\include\scripting;$(DevkitSimpackSrcRoot)\src\postproc\include\resulttree;$(DevkitSimpackSrcRoot)\src\postproc\include\nodes;$(DevkitSimpackExtRoot)\share\boost-1.56\include;$(DevkitSimpackExtRoot)\share\qt-4.8\include;$(DevkitSimpackExtRoot)\share\qt-4.8\include\QtGui;$(DevkitSimpackExtRoot)\share\qt-4.8\include\QtCore;$(DevkitSimpackSrcRoot)\src\libs;$(DevkitSimpackExtBuildRoot)\dyn\src\include;$(DevkitSimpackExtRoot)\share\xerces-2.8\include;$(DevkitSimpackExtRoot)\share\oiv-9.5.2-eng\include;$(DevkitSimpackExtRoot)\share\qsa-1.2\include;$(IncludePath)</IncludePath>
     <ExecutablePath>$(DevkitSimpackExtRoot)\win$(PlatformArchitecture)\qt-4.8\bin;$(DevkitSimpackExtRoot)\win$(PlatformArchitecture)\boost-1.56\lib;$(ExecutablePath)</ExecutablePath>
     <LibraryPath>$(DevkitSimpackExtRoot)\win$(PlatformArchitecture)\qt-4.8\lib;$(DevkitSimpackExtRoot)\win$(PlatformArchitecture)\boost-1.56\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup>
     <ClCompile>
-      <PreprocessorDefinitions>WINDOWS;WINDOWS$(PlatformArchitecture);TEST_EXPORT=;DLLEX=;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WINDOWS;WINDOWS$(PlatformArchitecture);TEST_EXPORT=;DLLEX=;BOOST_ALL_DYN_LINK;BOOST_ALL_NO_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
+    <Link>
+      <AdditionalDependencies>QtGui4.lib;QtCore4.lib;Qt3Support4.lib;QtOpenGL4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
     <BuildMacro Include="DevkitSimpackRoot">
