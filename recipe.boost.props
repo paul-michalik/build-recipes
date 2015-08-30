@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <RecipeBoostVersion>1_59_0</RecipeBoostVersion>
+    <RecipeBoostRootDir>$(DevkitCommonExtDir)\boost\boost_$(RecipeBoostVersion)</RecipeBoostRootDir>
+    <RecipeBoostIncDir>$(RecipeBoostRootDir)</RecipeBoostIncDir>
+    <RecipeBoostLibDir>$(RecipeBoostRootDir)\lib\$(DevkitCommonTargetShortPath)</RecipeBoostLibDir>
+    <RecipeBoostBinDir>$(RecipeBoostRootDir)\lib\$(DevkitCommonTargetShortPath)</RecipeBoostBinDir>
+    <RecipeBoostSrcDir>$(RecipeBoostRootDir)</RecipeBoostSrcDir>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ExecutablePath>$(RecipeBoostBinDir);$(ExecutablePath)</ExecutablePath>
+    <IncludePath>$(RecipeBoostIncDir);$(IncludePath)</IncludePath>
+    <LibraryPath>$(RecipeBoostLibDir);$(LibraryPath)</LibraryPath>
+    <SourcePath>$(RecipeBoostSrcDir);$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup />
+  <ItemGroup>
+    <BuildMacro Include="RecipeBoostVersion">
+      <Value>$(RecipeBoostVersion)</Value>
+    </BuildMacro>
+    <BuildMacro Include="RecipeBoostRootDir">
+      <Value>$(RecipeBoostRootDir)</Value>
+    </BuildMacro>
+    <BuildMacro Include="RecipeBoostIncDir">
+      <Value>$(RecipeBoostIncDir)</Value>
+    </BuildMacro>
+    <BuildMacro Include="RecipeBoostLibDir">
+      <Value>$(RecipeBoostLibDir)</Value>
+    </BuildMacro>
+    <BuildMacro Include="RecipeBoostBinDir">
+      <Value>$(RecipeBoostBinDir)</Value>
+    </BuildMacro>
+    <BuildMacro Include="RecipeBoostSrcDir">
+      <Value>$(RecipeBoostSrcDir)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>
