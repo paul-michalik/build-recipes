@@ -2,7 +2,7 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
-    <RecipeBoostVersion>1_59_0</RecipeBoostVersion>
+    <RecipeBoostVersion>1_56_0</RecipeBoostVersion>
     <RecipeBoostRootDir>$(DevkitCommonExtDir)\boost\boost_$(RecipeBoostVersion)</RecipeBoostRootDir>
     <RecipeBoostIncDir>$(RecipeBoostRootDir)</RecipeBoostIncDir>
     <RecipeBoostLibDir>$(RecipeBoostRootDir)\lib\$(DevkitCommonTargetShortPath)</RecipeBoostLibDir>
