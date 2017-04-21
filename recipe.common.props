@@ -5,13 +5,13 @@
     <Import Project="recipe.root.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros">
-    <DevkitCommonTmpDir>$(DevkitCommonRootTargetDir)\tmp\$(DevkitCommonTargetFullName)\$(ProjectName)</DevkitCommonTmpDir>
+    <DevkitCommonTmpDir>$(DevkitCommonRootTargetDir)\tmp\$(ProjectName)</DevkitCommonTmpDir>
     <DevkitCommonIncDir>$(DevkitCommonRootDir)</DevkitCommonIncDir>
     <DevkitCommonSrcDir>$(DevkitCommonRootDir)</DevkitCommonSrcDir>
-    <DevkitCommonLibDir>$(DevkitCommonRootTargetDir)\lib\$(DevkitCommonTargetFullPath)</DevkitCommonLibDir>
-    <DevkitCommonBinDir>$(DevkitCommonRootTargetDir)\bin\$(DevkitCommonTargetFullPath)</DevkitCommonBinDir>
-    <DevkitCommonLibABIDir>$(DevkitCommonRootTargetDir)\lib\$(DevkitCommonTargetShortPath)</DevkitCommonLibABIDir>
-    <DevkitCommonBinABIDir>$(DevkitCommonRootTargetDir)\bin\$(DevkitCommonTargetShortPath)</DevkitCommonBinABIDir>
+    <DevkitCommonLibDir>$(DevkitCommonRootTargetDir)\lib</DevkitCommonLibDir>
+    <DevkitCommonBinDir>$(DevkitCommonRootTargetDir)\bin</DevkitCommonBinDir>
+    <DevkitCommonLibABIDir>$(DevkitCommonRootTargetDir)\lib</DevkitCommonLibABIDir>
+    <DevkitCommonBinABIDir>$(DevkitCommonRootTargetDir)\bin</DevkitCommonBinABIDir>
     <DevkitCommonTargetDir>$(DevkitCommonRootTargetDir)</DevkitCommonTargetDir>
   </PropertyGroup>
   <PropertyGroup>

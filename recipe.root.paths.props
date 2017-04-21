@@ -1,33 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-    <PropertyGroup Label="UserMacros">
-        <DevkitCommonTargetFullPath>$(PlatformShortName)\$(PlatformToolset)\$(Configuration)</DevkitCommonTargetFullPath>
-        <DevkitCommonTargetMiddlePath>$(PlatformShortName)\$(PlatformToolset)</DevkitCommonTargetMiddlePath>
-        <DevkitCommonTargetShortPath>$(PlatformShortName)</DevkitCommonTargetShortPath>
-        <DevkitCommonTargetFullName>$(ProjectName).$(PlatformShortName).$(PlatformToolset).$(Configuration)</DevkitCommonTargetFullName>
-        <DevkitCommonTargetMiddleName>$(ProjectName).$(PlatformShortName).$(PlatformToolset)</DevkitCommonTargetMiddleName>
-        <DevkitCommonTargetShortName>$(ProjectName).$(PlatformShortName)</DevkitCommonTargetShortName>
-    </PropertyGroup>
-    <PropertyGroup />
-    <ItemDefinitionGroup />
-    <ItemGroup>
-        <BuildMacro Include="DevkitCommonTargetFullPath">
-            <Value>$(DevkitCommonTargetFullPath)</Value>
-        </BuildMacro>
-        <BuildMacro Include="DevkitCommonTargetMiddlePath">
-            <Value>$(DevkitCommonTargetMiddlePath)</Value>
-        </BuildMacro>
-        <BuildMacro Include="DevkitCommonTargetShortPath">
-            <Value>$(DevkitCommonTargetShortPath)</Value>
-        </BuildMacro>
-        <BuildMacro Include="DevkitCommonTargetFullName">
-            <Value>$(DevkitCommonTargetFullName)</Value>
-        </BuildMacro>
-        <BuildMacro Include="DevkitCommonTargetMiddleName">
-            <Value>$(DevkitCommonTargetMiddleName)</Value>
-        </BuildMacro>
-        <BuildMacro Include="DevkitCommonTargetShortName">
-            <Value>$(DevkitCommonTargetShortName)</Value>
-        </BuildMacro>
-    </ItemGroup>
+  <PropertyGroup Label="UserMacros">
+    <DevkitCommonTargetFullPath>$(PlatformShortName)\$(PlatformToolset)\$(Configuration)</DevkitCommonTargetFullPath>
+    <DevkitCommonTargetMiddlePath>$(PlatformShortName)\$(PlatformToolset)</DevkitCommonTargetMiddlePath>
+    <DevkitCommonTargetShortPath>$(PlatformShortName)</DevkitCommonTargetShortPath>
+    <DevkitCommonTargetFullName>$(PlatformShortName).$(PlatformToolset).$(Configuration)</DevkitCommonTargetFullName>
+    <DevkitCommonTargetMiddleName>$(PlatformShortName).$(PlatformToolset)</DevkitCommonTargetMiddleName>
+    <DevkitCommonTargetShortName>$(PlatformShortName)</DevkitCommonTargetShortName>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup />
+  <ItemGroup>
+    <BuildMacro Include="DevkitCommonTargetFullPath">
+      <Value>$(DevkitCommonTargetFullPath)</Value>
+    </BuildMacro>
+    <BuildMacro Include="DevkitCommonTargetMiddlePath">
+      <Value>$(DevkitCommonTargetMiddlePath)</Value>
+    </BuildMacro>
+    <BuildMacro Include="DevkitCommonTargetShortPath">
+      <Value>$(DevkitCommonTargetShortPath)</Value>
+    </BuildMacro>
+    <BuildMacro Include="DevkitCommonTargetFullName">
+      <Value>$(DevkitCommonTargetFullName)</Value>
+    </BuildMacro>
+    <BuildMacro Include="DevkitCommonTargetMiddleName">
+      <Value>$(DevkitCommonTargetMiddleName)</Value>
+    </BuildMacro>
+    <BuildMacro Include="DevkitCommonTargetShortName">
+      <Value>$(DevkitCommonTargetShortName)</Value>
+    </BuildMacro>
+  </ItemGroup>
 </Project>
