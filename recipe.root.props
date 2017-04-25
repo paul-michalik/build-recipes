@@ -3,7 +3,7 @@
   <PropertyGroup Label="UserMacros">
     <DevkitCommonRootDir>$(SolutionDir)..\..</DevkitCommonRootDir>
     <DevkitCommonBuildTool>msbuild</DevkitCommonBuildTool>
-    <DevkitCommonRootTargetDir>$(DevkitCommonRootDir)\products\msbuild.$(PlatformShortName).$(PlatformToolset).$(Configuration)</DevkitCommonRootTargetDir>
+    <DevkitCommonRootTargetDir>$(DevkitCommonRootDir)\products\msbuild.$(DevkitCommonTargetFullName)</DevkitCommonRootTargetDir>
     <DevkitCommonExtDir>$(Userprofile)\Software</DevkitCommonExtDir>
   </PropertyGroup>
   <ItemDefinitionGroup />
