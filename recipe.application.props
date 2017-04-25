@@ -7,6 +7,10 @@
   <PropertyGroup>
     <OutDir>$(DevkitCommonBinDir)\</OutDir>
   </PropertyGroup>
-  <ItemDefinitionGroup />
+  <ItemDefinitionGroup>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
   <ItemGroup />
 </Project>
