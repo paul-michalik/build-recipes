@@ -29,6 +29,7 @@
       <DisableSpecificWarnings>4510;4512;4610;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <UseFullPaths>true</UseFullPaths>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
