@@ -1,10 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Label="UserMacros">
-    <DevkitCommonRootDir>$(SolutionDir)..\..</DevkitCommonRootDir>
     <DevkitCommonBuildTool>msbuild</DevkitCommonBuildTool>
-    <DevkitCommonRootTargetDir>$(DevkitCommonRootDir)\products\msbuild.$(DevkitCommonTargetFullName)</DevkitCommonRootTargetDir>
+    <DevkitCommonRootDir>$(SolutionDir)..\..</DevkitCommonRootDir>
+    <DevkitCommonRootTargetDir>$(DevkitCommonRootDir)\products\msbuild.$(ApplicationType).$(DevkitCommonTargetFullName)</DevkitCommonRootTargetDir>
     <DevkitCommonExtDir>$(Userprofile)\Software</DevkitCommonExtDir>
+    <ApplicationType>Windows</ApplicationType>
   </PropertyGroup>
   <ItemDefinitionGroup />
   <ItemGroup>
@@ -16,6 +17,10 @@
     </BuildMacro>
     <BuildMacro Include="DevkitCommonExtDir">
       <Value>$(DevkitCommonExtDir)</Value>
+    </BuildMacro>
+    <BuildMacro Include="ApplicationType">
+      <Value>$(ApplicationType)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
     </BuildMacro>
   </ItemGroup>
 </Project>
